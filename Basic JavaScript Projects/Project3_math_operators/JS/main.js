@@ -46,3 +46,14 @@ function decrement() { //decrement
 }
 
 window.alert (Math.random() * 100); //random number 0-100
+
+function my_Dictionary() {
+    var Animal = {
+        Species:"Dog",
+        Color:"Black",
+        Breed:"Labrador",
+        Age:5,
+        Sound:"Bark!"
+    }
+    document.getElementById("Dictionary").innerHTML = Animal.Sound
+}
