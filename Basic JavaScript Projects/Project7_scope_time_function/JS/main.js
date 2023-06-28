@@ -36,7 +36,7 @@ function get_Date() {
     }
 }
 
-function Vote_allowance() {
+function Vote_allowance() { //This function check if and else statement
     Age = document.getElementById("Age").value;
     if (Age >= 18) {
         Vote = "You are old enough to vote!";
@@ -47,7 +47,7 @@ function Vote_allowance() {
     document.getElementById("Your_age?").innerHTML = Vote;
 }
 
-function Time_function() {
+function Time_function() { //This function shows us if it's morning, afternoon or evening time besed on the time from your computer
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
