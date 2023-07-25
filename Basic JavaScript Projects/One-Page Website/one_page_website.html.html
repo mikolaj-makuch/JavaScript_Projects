@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+		<!-- HEAD -->
+			<head>
+				<title>Aquarium World</title>
+				<meta charset="utf-8">
+				<style>
+				.center {
+				text-align: center;
+				}
+				</style>
+				<script src="JS/one_page_website.js" defer></script>
+				<link rel="stylesheet" href="./css/one_page_website.css">
+			</head>
+		<!-- END HEAD-->
+		
+		<!-- BODY -->
+			<body>
+				
+				<!-- H1 -->
+				<div id="home">
+					<div class="center"><h1>Aquarium World</h1></div>
+				</div>
+				<!-- H1 -->
+				<br>
+				<!-- NAV -->
+				<div>
+					<div>
+						<nav class="nav">
+							<a href="#home" id="link"><li>HOME</li></a>
+							<a href="#tutorial"><li>TUTORIAL</li></a>
+							<a href="#gallery"><li>GALLERY</li></a>
+							<a href="#contact"><li>CONTACT</li></a>
+						</nav>
+					</div>
+				</div>
+				<!-- END NAV -->
+				<br><br>
+				<!-- VIDEO -->
+				<div class="container" id="tutorial">
+					<h2 class="center">Tutorial</h2>
+					<p><div class="center"><b>How to set up a new aquarium?<br>
+					Watch this short video and then do it!</b></div></p>
+					<div>
+					<div class="center"><iframe width="560" height="315"
+					src="https://www.youtube.com/embed/vIApulWcVE8"></iframe></div>
+					</div>
+				</div>
+				<!-- END VIDEO -->
+				<br><br>
+				<!-- GALLERY -->
+
+				<!--Images used to open the lightbox-->
+				<div class="row">
+					<div class="column">
+						<img src="Images/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="Images/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+				</div>
+				
+				<!--The Modal/Lightbox-->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="Images/thumbnail_1.png" style="width:100%">
+						</div>
+						
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="Images/thumbnail_2.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="Images/thumbnail_3.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="Images/thumbnail_4.png" style="width:100%">
+						</div>
+
+						<!--Next/previous controls-->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!--Caption text-->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<!--Thumbnail image controls-->
+						<div class="column">
+							<img class="demo" src="Images/thumbnail_1.png" onclick="currentSlide(1)" alt="Glass (Ghost)">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="Images/thumbnail_2.png" onclick="currentSlide(2)" alt="Blue Dream">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="Images/thumbnail_3.png" onclick="currentSlide(3)" alt="Red Cherry">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="Images/thumbnail_4.png" onclick="currentSlide(4)" alt="Amano">
+						</div>
+					</div>
+				</div>
+
+				<!-- END GALLERY -->
+				
+				<!-- CONTACT -->
+				<br><div class="contact">
+					<form action="" method="get" class="contact-form">
+						<div class="center" class="contact-form" id="contact">
+							<label for="name">Enter your name: </label>
+							<input type="text" name="name" id="name" required>
+						</div>
+						<div class="center" class="contact-form">
+							<label for="email">Enter your email: </label>
+							<input type="email" name="email" id="email" required>
+						</div>
+						<br>
+						<div class="center" class="contact-form">
+							<input type="submit" value="Contact Us">
+						</div>
+					</form>
+				</div>
+				<!-- END CONTACT -->
+				
+			</body>
+		<!-- END BODY -->
+		
+		<!-- FOOTER -->
+		<footer>
+				<div class="center"><p>&copy; 2023 Aquarium World</p></div>
+		</footer>
+		<!-- END FOOTER -->
+	</html>
