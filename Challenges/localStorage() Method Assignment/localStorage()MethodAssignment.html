@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The localStorage Property</h1>
+
+        <p>Saved name is:</p>
+        <p id="demo"></p>
+
+        <script>
+            //Set Item
+            localStorage.setItem("lastname", "Smith");
+            //Retrieve
+            document.getElementById("demo").innerHTML =
+            localStorage.getItem("lastname");
+        </script>
+    </body>
+</html>
